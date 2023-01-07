@@ -12,7 +12,7 @@
         visibility 250ms var(--timing-function);
 }
 
-.backdrop--is-hidden {
+.backdrop.is-hidden {
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
@@ -205,10 +205,18 @@
     transition: opacity 250ms var(--timing-function);
 }
 
-.form__privacy-input:checked+.form__privacy-icon-wrap {
-    border-color: transparent;
-    background-color: var(--accent-color);
-    position: relative;
+.form__privacy-input {
+position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+text-align: center;
 }
 
 .form__privacy-icon-wrap .form__privacy-icon {
