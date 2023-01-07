@@ -1,0 +1,23 @@
+.about {
+    padding: 94px 0;
+
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
+}
+
+.section-title {
+    @extend %title;
+}
+
+.list-job {
+    display: flex;
+}
+
+.about-item {
+    position: relative;
+    
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+}
