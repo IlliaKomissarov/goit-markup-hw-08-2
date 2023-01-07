@@ -1,0 +1,51 @@
+%title {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 50px;
+        font-size: 36px;
+        line-height: 1.17;
+    }
+}
+
+
+%button {
+    @media screen and (min-with: $desktop) {
+        padding: 10px 32px;
+    }
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 24px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    background-color: var(--accent-color);
+    color: var(--white-color);
+    box-shadow: 0px 4px 4px var(--shadow);
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+
+%hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    bottom: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}

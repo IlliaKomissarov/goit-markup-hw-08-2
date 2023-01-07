@@ -1,0 +1,31 @@
+.clients {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    list-style: none;
+    & .link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 170px;
+            height: 92px;
+            color: var(--borders);
+            border: 1px solid currentColor;
+            border-radius: 4px;
+            fill: currentColor;
+            transition: border-color 250ms var(--timing-function),
+                color 250ms var(--timing-function);
+        }
+            & .link:hover,
+            & .link:focus {
+                border-color: var(--accent-color);
+                color: var(--accent-color);
+                }
+                    & .item+.item {
+                    margin-left: 30px;
+                        }
+}
+
+.icon-clients {
+    fill: currentColor;
+}

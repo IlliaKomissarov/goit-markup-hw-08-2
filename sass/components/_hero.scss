@@ -1,0 +1,95 @@
+.hero {
+width: 100%;
+        padding: 118px 0;
+        margin: 0 auto;
+        background-color: var(--bg-footer-color);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    background-image: linear-gradient(var(--gradient), var(--gradient)), url('../images/background-image-mobile.jpg');
+    
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (-webkit-min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image: linear-gradient(var(--gradient), var(--gradient)), url('../images/background-image-mobile@2x.jpg');
+        }
+    
+    
+    
+    
+    
+    @media screen and (min-width: 480px) {
+            max-width: 480px;
+        }
+    
+        @media screen and (min-width: 768px) {
+            max-width: 768px;
+            background-image: linear-gradient(var(--gradient), var(--gradient)), url('../images/background-image-tablet.jpg');
+    
+            @media screen and (min-device-pixel-ratio: 2),
+            screen and (-webkit-min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+                background-image: linear-gradient(var(--gradient), var(--gradient)), url('../images/background-image-tablet@2x.jpg');
+            }
+        }
+    
+        @media screen and (min-width: 1200px) {
+            max-width: 1600px;
+            padding: 200px 0;
+            background-image: linear-gradient(var(--gradient), var(--gradient)), url('../images/background-image-desktop.jpg');
+    
+            @media screen and (min-device-pixel-ratio: 2),
+            screen and (-webkit-min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+                background-image: linear-gradient(var(--gradient), var(--gradient)), url('../images/background-image-desktop@2x.jpg');
+            }
+        }
+    
+    
+}
+
+
+.hero-title {
+@media screen and (min-width: $desktop) {
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+    }
+
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--white-color);
+}
+
+.btn {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    display: block;
+    border: 0;
+    padding: 10px 32px;
+    margin: 0 auto;
+    border-radius: 4px;
+    box-shadow: var(--shadow);
+    @extend %button;
+    &:hover,
+    &:focus {
+            background-color: #188CE8;
+        }
+}
+
