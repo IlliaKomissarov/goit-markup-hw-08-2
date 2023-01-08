@@ -150,20 +150,12 @@
   }
 
   
-  .contacts__icon-tablet {
-   @media screen and (max-width: 1199px) { 
-    margin: auto 10px auto auto;
-    margin-left: 0;
-  }
-  @media screen and (min-width: $desktop) {
-    display: none;
-  }
-}
+
 
   .contacts__icon-smartphone {
-    margin: auto 10px auto auto;
+    margin-right: 10px;
     @media screen and (max-width: 1199px) {
-      display: none;
+      
     }
   }
   

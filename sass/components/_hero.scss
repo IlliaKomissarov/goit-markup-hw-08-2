@@ -53,7 +53,22 @@ width: 100%;
 
 
 .hero-title {
-@media screen and (min-width: $desktop) {
+
+@media screen and (min-width: $tablet) {
+        font-weight: 900;
+        width: 360px;
+        line-height: 1.62;
+        text-align: center;
+        margin-bottom: 30px;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--white-color);
+                margin-left: auto;
+                    margin-right: auto;
+        
+    }
+
+    @media screen and (min-width: $desktop) {
         font-weight: 900;
         font-size: 44px;
         line-height: 1.36;
@@ -62,9 +77,14 @@ width: 100%;
         margin-left: auto;
         margin-right: auto;
     }
+
+
+
+    margin-bottom: 30px;
     width: 100%;
     line-height: 1.62;
     text-align: center;
+    margin-bottom: 30px;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--white-color);
