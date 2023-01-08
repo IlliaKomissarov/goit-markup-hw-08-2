@@ -539,6 +539,11 @@ body {
   color: var(--title-text-color);
   margin-bottom: 10px;
 }
+@media screen and (max-width: 767px) {
+  .title {
+    text-align: center;
+  }
+}
 
 .p-list {
   font-style: normal;
@@ -734,6 +739,10 @@ body {
 .social-com .link:hover, .social-com .link:focus {
   background-color: var(--accent-color);
   fill: var(--white-color);
+}
+
+.team-jpg {
+  width: 100%;
 }
 
 .clients {
@@ -1098,6 +1107,10 @@ body {
   visibility: visible;
   -webkit-transition: opacity 250ms var(--timing-function), visibility 250ms var(--timing-function);
   transition: opacity 250ms var(--timing-function), visibility 250ms var(--timing-function);
+  -webkit-transition: -webkit-transform 250ms var(--timing-function);
+  transition: -webkit-transform 250ms var(--timing-function);
+  transition: transform 250ms var(--timing-function);
+  transition: transform 250ms var(--timing-function), -webkit-transform 250ms var(--timing-function);
 }
 
 .backdrop.is-hidden {
@@ -1124,6 +1137,18 @@ body {
   transition: opacity 250ms var(--timing-function);
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
+}
+@media screen and (min-width: 1200px) {
+  .backdrop__modal {
+    height: 581px;
+    width: 528px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .backdrop__modal {
+    width: 450px;
+    height: 609px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .backdrop__modal {

@@ -10,6 +10,7 @@
     visibility: visible;
     transition: opacity 250ms var(--timing-function),
         visibility 250ms var(--timing-function);
+        transition: transform 250ms var(--timing-function);
 }
 
 .backdrop.is-hidden {
@@ -40,6 +41,15 @@
     border-radius: 4px;
     transition: opacity 250ms var(--timing-function);
     transform: translate(-50%, -50%) scale(1);
+                        @media screen and (min-width: $mobile) {
+                            width: 450px;
+                            height: 609px;
+                        }
+
+         @media screen and (min-width: $desktop) {
+             height: 581px;
+             width: 528px;
+         }
 }
 
 .backdrop__close {
