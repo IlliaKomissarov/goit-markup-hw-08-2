@@ -4,6 +4,9 @@
 
 .features {
     padding-top: 60px;
+     @media screen and (min-width: $desktop) {
+        padding: 94px;
+     }
 }
 
 .features-title {

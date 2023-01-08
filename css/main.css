@@ -495,6 +495,11 @@ body {
 .features {
   padding-top: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .features {
+    padding: 94px;
+  }
+}
 
 .features-list {
   list-style: none;
