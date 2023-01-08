@@ -24,15 +24,15 @@
 
 .backdrop__modal {
     @media screen and (min-width: $desktop) {
-        min-height: 581px;
-        max-width: 528px;
+        height: 581px;
+        width: 528px;
     }
 
     position: absolute;
     top: 50%;
     left: 50%;
-    min-height: 609px;
-    max-width: 450px;
+    height: 609px;
+    width: 95%;
     background-color: var(--white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -227,4 +227,14 @@ text-align: center;
     opacity: 1;
     position: absolute;
     transform: translate(0, -10%);
+}
+
+.form__privacy-input:checked + .form__privacy-icon-wrap {
+    border-color: white;
+}
+
+.form__privacy-icon {
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }

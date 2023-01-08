@@ -182,3 +182,7 @@
 .js-menu-container.is-open {
     transform: translateX(0);
 }
+
+.mobile-menu__link--current {
+color: var(--accent-color);
+}

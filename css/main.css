@@ -404,6 +404,7 @@ body {
 }
 
 .hero-title {
+  width: 100%;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
@@ -470,12 +471,29 @@ body {
   margin-right: 30px;
 }
 
+.about__subtitle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  padding: 27px 0;
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  background-color: var(--gradient-about);
+  color: var(--white-color);
+}
+
 .features-title {
   display: none;
 }
 
 .features {
-  padding-top: 94px;
+  padding-top: 60px;
 }
 
 .features-list {
@@ -611,6 +629,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media screen {
   .list-workers {
@@ -757,10 +778,6 @@ body {
     -ms-flex-preferred-size: calc((100% - 150px) / 6);
         flex-basis: calc((100% - 150px) / 6);
   }
-}
-
-.clients__item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .clients__link {
@@ -1094,8 +1111,8 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  min-height: 609px;
-  max-width: 450px;
+  height: 609px;
+  width: 95%;
   background-color: var(--white-color);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1107,8 +1124,8 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .backdrop__modal {
-    min-height: 581px;
-    max-width: 528px;
+    height: 581px;
+    width: 528px;
   }
 }
 
@@ -1321,6 +1338,22 @@ body {
           transform: translate(0, -10%);
 }
 
+.form__privacy-input:checked + .form__privacy-icon-wrap {
+  border-color: white;
+}
+
+.form__privacy-icon {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .header-burger__btn,
 .header-close__btn {
   min-height: 40px;
@@ -1509,4 +1542,8 @@ body {
 .js-menu-container.is-open {
   -webkit-transform: translateX(0);
           transform: translateX(0);
+}
+
+.mobile-menu__link--current {
+  color: var(--accent-color);
 }/*# sourceMappingURL=main.css.map */
