@@ -39,7 +39,7 @@
     0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    transition: opacity 250ms var(--timing-function);
+   transition: transform 250ms var(--timing-function);
     transform: translate(-50%, -50%) scale(1);
                         @media screen and (min-width: $mobile) {
                             width: 450px;
