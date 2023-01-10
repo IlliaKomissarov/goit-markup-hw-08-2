@@ -1107,12 +1107,6 @@ body {
   z-index: 2;
   opacity: 1;
   visibility: visible;
-  -webkit-transition: opacity 250ms var(--timing-function), visibility 250ms var(--timing-function);
-  transition: opacity 250ms var(--timing-function), visibility 250ms var(--timing-function);
-  -webkit-transition: -webkit-transform 250ms var(--timing-function);
-  transition: -webkit-transform 250ms var(--timing-function);
-  transition: transform 250ms var(--timing-function);
-  transition: transform 250ms var(--timing-function), -webkit-transform 250ms var(--timing-function);
 }
 
 .backdrop.is-hidden {
